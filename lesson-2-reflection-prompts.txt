@@ -1,20 +1,30 @@
-What happens when you initialize a repository? Why do you need to do it?
+﻿What happens when you initialize a repository? Why do you need to do it?
 	A hidden directory(.git) is created which can store the commit history. The general directories do not save the commit history and different versions of our files, so we need to crete a repository where we can have commit history and different versions of our files.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-	Staging area is memory location and it stores the files in transit from working directory to repository. It helps us to save multiple files in one commit. 
+	Staging area is memory location and it stores the files in transit from working directory to repository. It helps us to save multiple files in one commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	We can add all files related to a particular logical change in staging area and then commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	If we have to work with a version in differnet forms then branches will help us to have history in bramched form and we jump between various versios by just using branch name and not commit IDs.
 
 How do the diagrams help you visualize the branch structure?
+	By using the diagram, we can know parent of every commit and can know the reachability of every branch. We can also know if any commit is out of reach. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	The new version has the commits from both branches. The recently checked out branch is now the head of this merged branch. We represent more than one parents of merged branch as it has commits from all those branches.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Automatic merging:
+	Cons: Sometimes it may lead to bug or error in program by not stating them as conflicts.
+	Pros: User need not be always bothered about looking into conflicts.
+	Manual merging:
+	Cons: Some conflicts are too obvious which leads to wastage of time.
+	Pros: Error and bugs are prevented in case of a conflict.
